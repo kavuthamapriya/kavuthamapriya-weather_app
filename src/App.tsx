@@ -149,7 +149,7 @@ const App: React.FC = () => {
           <input
             type="text"
             className="city-input"
-            placeholder="Search City"
+            placeholder="Enter City"
             onChange={handleCity}
             value={text}
             onKeyDown={handleKeyDown}
@@ -162,7 +162,6 @@ const App: React.FC = () => {
         {loading && <div className="loading-message">Loading...</div>}
         {error && <div className="error-message">{error}</div>}
         {cityNotFound && <div className="city-not-found">City not found</div>}
-
         {!loading && !cityNotFound && (
           <WeatherDetails
             icon={icon}
